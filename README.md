@@ -26,3 +26,8 @@ pass: changeme
 ## Utilisation 
 
 Ensuite pour l'utilisation c'est comme une stack elk basique il faut configurer logstash et des différentes sondes pour ensuite synchro tout avec elastic et avec kibana il faut config le dashboard que l'on souhaite avoir 
+
+Par la suite il sera nécéssaire d'allouer plus de ressource à Elastic, pour ce faire il faut modifier le fichier docker-compose.yml et de modifier par la suite il faut modifier la ligne 
+`      ES_JAVA_OPTS: "-Xmx256m -Xms256m"`
+
+et on change -Xmx256m par la valeur que l'on souhaite 256m = 256mo donc on peut mettre 4G pour 4go
