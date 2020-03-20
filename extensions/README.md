@@ -1,0 +1,1 @@
+Extension qui permette l'ajout d'intégration sur la stack ELK
